@@ -1,0 +1,87 @@
+@font-face {
+    font-family: UniSansHeavy;
+    src: url("/etc/designs/helpdesk/clientlib-site/fonts/Uni Sans Heavy.otf");
+}
+
+@font-face {
+    font-family: TabarraBlack;
+    src: url("/etc/designs/helpdesk/clientlib-site/fonts/Tabarra Black.otf");
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main-content-block{
+    margin-bottom: 80px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background: #C14646;
+    padding-top: 18px;
+}
+
+footer p {
+    font-family: UniSansHeavy;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.media-type-placeholder {
+    display: block;
+    position: absolute;
+    left: -1000em;
+    top: -1000em;
+}
+
+.flex-component-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .media-type-placeholder {
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .media-type-placeholder {
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .media-type-placeholder {
+        z-index: 1;
+    }
+
+    .first_level_content{
+        display: block;
+    }
+}
+
+.first_level_content{
+    display: flex;
+}
